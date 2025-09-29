@@ -36,13 +36,13 @@ In a terminal:
 
 ```sh
 cd assembly-example
-nasm -f elf64 hello.s  # Compile source to object file that contains machine code
+nasm -f elf64 task1.s  # Compile source to object file that contains machine code
                        # and usually also references to functions or variables found
                        # in other object files or libraries.
-ld hello.o -o hello    # Link object file and create executable. Normally,
+ld task1.o -o task1    # Link object file and create executable. Normally,
                        # the machine code of several object files are here combined into
                        # one executable, but references to dynamic libraries are kept.
-./hello                # Run executable
+./task1                # Run executable
 ```
 
 ### Alternative 2 using [juCi++](https://gitlab.com/cppit/jucipp)
@@ -50,10 +50,10 @@ ld hello.o -o hello    # Link object file and create executable. Normally,
 Choose Run Command in the Project menu, and run the following command:
 
 ```sh
-nasm -f elf64 hello.s && ld hello.o -o hello && ./hello
+nasm -f elf64 task1.s && ld task1.o -o task1 && ./task1
 ```
 
-Note: if you make changes to the `hello.s` source file, remember to save it before running the above command.
+Note: if you make changes to the `task1.s` source file, remember to save it before running the above command.
 
 ---
 
