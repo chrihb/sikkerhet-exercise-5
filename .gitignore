@@ -5,3 +5,5 @@ task1
 task1.o
 task2
 cmake-build-debug
+.idea
+task3

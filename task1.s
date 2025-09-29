@@ -17,7 +17,7 @@ top:
   mov rax, 1                  ; The system call for write
   mov rdi, 2                  ; File descriptor 1 - standard output - swapped to stderr (2)
   mov rsi, msg                ; Memory address of message
-  mov rdx, len                 ; The length of message
+  mov rdx, len                ; The length of message
   syscall                     ; Call the kernel
 
   pop rcx                     ; Restore counter from the stack
